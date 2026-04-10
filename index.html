@@ -141,6 +141,78 @@
       font-weight: 700;
     }
 
+    .mf-benefit-label {
+      font-family: var(--mf-font-body);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--mf-light);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+
+    /* ============================================================
+       TESTIMONIANZE
+       ============================================================ */
+    .mf-testimonianze {
+      background:
+        radial-gradient(ellipse at 85% 20%, rgba(84, 162, 210, 0.1) 0%, transparent 50%),
+        var(--mf-light);
+      padding: 72px 24px;
+    }
+    .mf-testimonianze-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    .mf-testimonianze h2 {
+      font-family: var(--mf-font-title);
+      font-size: clamp(24px, 3vw, 38px);
+      font-weight: 700;
+      color: var(--mf-navy);
+      text-align: center;
+      margin-bottom: 44px;
+    }
+    .mf-testi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .mf-testi-card {
+      background: var(--mf-white);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 2px 16px rgba(0, 58, 100, 0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .mf-testi-stars {
+      color: #f5a623;
+      font-size: 15px;
+      letter-spacing: 2px;
+    }
+    .mf-testi-text {
+      font-family: var(--mf-font-body);
+      font-size: 14px;
+      color: #334e68;
+      line-height: 1.75;
+      flex: 1;
+      font-style: italic;
+    }
+    .mf-testi-name {
+      font-family: var(--mf-font-body);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--mf-navy);
+      padding-top: 12px;
+      border-top: 1px solid rgba(0, 58, 100, 0.08);
+    }
+
+    @media (max-width: 768px) {
+      .mf-testi-grid { grid-template-columns: 1fr; }
+      .mf-testimonianze { padding: 56px 24px; }
+    }
+
     /* ============================================================
        COLONNA DESTRA — CARD FORM
        ============================================================ */
@@ -322,12 +394,12 @@
         <span class="mf-hero-label">Guida gratuita</span>
         <h1>Lo stipendio ti scivola via <em>dalle mani?</em></h1>
         <p class="mf-hero-subtitle">Gestire i soldi che guadagni con il metodo giusto può cambiare la tua vita.</p>
-        <p class="mf-hero-detail">Vuol dire toglierti l'ansia e iniziare a costruire la tua serenità economica.</p>
+        <p class="mf-hero-detail">Vuol dire toglierti l'ansia per i soldi e iniziare a costruire la tua serenità economica.</p>
+        <p class="mf-benefit-label">Ecco cosa ottieni se scarichi la Guida:</p>
         <ul class="mf-benefit-list">
-          <li>Capisci dove finiscono davvero i tuoi soldi ogni mese</li>
-          <li>Scopri il metodo dei 3 Rituali di Ricchezza</li>
-          <li>Inizi a risparmiare anche se non ci sei mai riuscito</li>
-          <li>È gratuita. Nessun pagamento richiesto.</li>
+          <li>Una strategia per gestire entrate e spese che puoi adattare alla tua situazione personale</li>
+          <li>Un modo per riuscire a risparmiare per realizzare i tuoi progetti indipendentemente da quanto guadagni</li>
+          <li>Un'opportunità per costruire passo dopo passo un presente e un futuro di serenità economica</li>
         </ul>
       </div>
 
@@ -401,6 +473,36 @@
   </section>
 
   <!-- ============================================================
+       TESTIMONIANZE
+       ============================================================ -->
+  <section class="mf-testimonianze">
+    <div class="mf-testimonianze-inner">
+      <h2>Cosa dice chi ha già iniziato il cambiamento</h2>
+      <div class="mf-testi-grid">
+
+        <div class="mf-testi-card">
+          <div class="mf-testi-name">Vanessa</div>
+          <div class="mf-testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="mf-testi-text">Dora e Davide mi hanno fornito strumenti e consigli per gestire al meglio i miei soldi. Alla fine del percorso ho raggiunto i risultati che speravo: ho imparato a gestire i miei soldi e finalmente riesco a risparmiare. Consiglio il loro percorso a chiunque vuole migliorare la propria situazione economica.</p>
+        </div>
+
+        <div class="mf-testi-card">
+          <div class="mf-testi-name">Bianca</div>
+          <div class="mf-testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="mf-testi-text">Vi ringrazio infinitamente per i vostri preziosi suggerimenti. Grazie a voi negli ultimi mesi ho risparmiato più di quanto pensassi di poter fare. Adesso sto costruendo il mio fondo di emergenza. Non avrei mai pensato di potercela fare. Il merito è soprattutto vostro!</p>
+        </div>
+
+        <div class="mf-testi-card">
+          <div class="mf-testi-name">Antonio</div>
+          <div class="mf-testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="mf-testi-text">Erano anni che cercavo un metodo valido per gestire le entrate e le spese. Avevo provato tante app, il Kakebo, ma alla fine mi perdevo sempre qualcosa. Adesso finalmente i conti tornano e riesco a risparmiare. Grazie davvero per il vostro aiuto.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
        FOOTER
        ============================================================ -->
   <footer class="mf-footer">
@@ -465,7 +567,7 @@
     #mlb2-14767897.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label {
       font-weight: normal; margin: 0; padding: 0;
       position: relative; display: block;
-      min-height: 24px; padding-left: 24px;
+      min-height: 24px; padding-left: 20px;
     }
     #mlb2-14767897.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"] {
       box-sizing: border-box; padding: 0;
@@ -473,14 +575,14 @@
       margin-top: 5px; margin-left: -1.5rem;
     }
     #mlb2-14767897.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
-      position: absolute; top: 2px; left: -1.5rem;
+      position: absolute; top: 2px; left: -22px;
       display: block; width: 16px; height: 16px;
       pointer-events: none; content: "";
       background-color: #ffffff;
       border: #a9cee8 solid 1px; border-radius: 4px;
     }
     #mlb2-14767897.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
-      position: absolute; top: 0px; left: -1.5rem;
+      position: absolute; top: 0px; left: -22px;
       display: block; width: 1rem; height: 1rem; content: "";
       background: no-repeat 50%/50% 50%;
     }
