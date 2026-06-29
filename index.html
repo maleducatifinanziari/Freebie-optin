@@ -71,8 +71,8 @@
       flex: 1;
       background: var(--mf-white);
       display: flex;
-      align-items: center;
-      padding: 60px 24px;
+      align-items: flex-start;
+      padding: 36px 24px 48px;
     }
 
     .mf-hero-inner {
@@ -81,8 +81,8 @@
       width: 100%;
       display: grid;
       grid-template-columns: 1fr 440px;
-      gap: 72px;
-      align-items: center;
+      gap: 48px;
+      align-items: start;
     }
 
     /* Colonna sinistra — copy */
@@ -119,7 +119,7 @@
       font-size: 19px;
       color: var(--mf-navy);
       line-height: 1.65;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
       max-width: 480px;
     }
 
@@ -129,7 +129,7 @@
       color: var(--mf-navy);
       line-height: 1.65;
       max-width: 440px;
-      margin-bottom: 36px;
+      margin-bottom: 20px;
     }
 
     /* Bullet benefit */
@@ -431,10 +431,10 @@
     @media (max-width: 860px) {
       .mf-hero-inner {
         grid-template-columns: 1fr;
-        gap: 44px;
+        gap: 28px;
       }
       .mf-hero {
-        padding: 48px 24px 56px;
+        padding: 28px 24px 40px;
       }
       .mf-hero h1 { font-size: 38px; }
       .mf-hero-subtitle { font-size: 17px; }
@@ -484,7 +484,6 @@
 
       <!-- Copy -->
       <div class="mf-hero-copy">
-        <span class="mf-hero-label">Guida gratuita</span>
         <h1>Lo stipendio ti scivola via <em>dalle mani?</em></h1>
         <p class="mf-hero-subtitle">Gestire i soldi che guadagni con il metodo giusto può cambiare la tua vita.</p>
         <p class="mf-hero-detail">Vuol dire toglierti l'ansia per i soldi e iniziare a costruire la tua serenità economica.</p>
