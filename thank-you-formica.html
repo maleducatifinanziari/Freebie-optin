@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hai scelto la Formica — Maleducati Finanziari</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1484404588815255');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1484404588815255&ev=PageView&noscript=1"
+  /></noscript>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --mf-navy:       #003a64;
+      --mf-blue:       #54a2d2;
+      --mf-light:      #a9cee8;
+      --mf-white:      #ffffff;
+      --mf-font-title: 'Antonio', sans-serif;
+      --mf-font-body:  'DM Sans', sans-serif;
+    }
+
+    body {
+      font-family: var(--mf-font-body);
+      color: var(--mf-navy);
+      background: var(--mf-white);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mf-hero {
+      flex: 1;
+      background: var(--mf-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 72px 24px 56px;
+      text-align: center;
+    }
+
+    .mf-hero-inner { max-width: 600px; width: 100%; }
+
+    .mf-emoji { font-size: 56px; margin-bottom: 28px; display: block; }
+
+    .mf-hero-label {
+      font-family: var(--mf-font-body);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--mf-blue);
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .mf-hero h1 {
+      font-family: var(--mf-font-title);
+      font-size: clamp(36px, 6vw, 58px);
+      font-weight: 700;
+      color: var(--mf-navy);
+      line-height: 1.08;
+      margin-bottom: 20px;
+    }
+
+    .mf-hero h1 em { font-style: normal; color: var(--mf-blue); }
+
+    .mf-hero-subtitle {
+      font-size: 18px;
+      color: var(--mf-navy);
+      line-height: 1.65;
+    }
+
+    .mf-missione {
+      background: var(--mf-white);
+      padding: 48px 24px 56px;
+      text-align: center;
+      border-top: 1px solid rgba(0, 58, 100, 0.08);
+    }
+
+    .mf-missione-inner { max-width: 560px; margin: 0 auto; }
+
+    .mf-missione p {
+      font-size: 17px;
+      color: var(--mf-navy);
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+
+    .mf-missione p:last-of-type { margin-bottom: 0; }
+    .mf-missione strong { color: var(--mf-navy); }
+
+    .mf-next-mail {
+      display: inline-block;
+      margin-top: 28px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--mf-blue);
+      letter-spacing: 0.02em;
+    }
+
+    .mf-foto {
+      background: var(--mf-white);
+      padding: 0 24px 72px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .mf-foto img {
+      width: 220px;
+      border-radius: 16px;
+      display: block;
+      box-shadow: 0 8px 32px rgba(0, 58, 100, 0.10);
+    }
+
+    .mf-footer {
+      background: var(--mf-navy);
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .mf-footer p {
+      font-size: 12px;
+      color: rgba(169, 206, 232, 0.55);
+      line-height: 2;
+    }
+    .mf-footer strong { color: rgba(169, 206, 232, 0.8); font-size: 13px; }
+
+    @media (max-width: 560px) {
+      .mf-hero { padding: 56px 20px 40px; }
+      .mf-missione { padding: 40px 20px 48px; }
+      .mf-foto { padding-bottom: 56px; }
+      .mf-foto img { width: 180px; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="mf-hero">
+    <div class="mf-hero-inner">
+      <span class="mf-emoji">🐜</span>
+      <span class="mf-hero-label">Hai scelto il tuo profilo</span>
+      <h1>Sei una <em>Formica.</em></h1>
+      <p class="mf-hero-subtitle">
+        Risparmi, sei attenta, sei metodica.<br>
+        Ma a volte ti chiedi se stai vivendo davvero.
+      </p>
+    </div>
+  </section>
+
+  <section class="mf-missione">
+    <div class="mf-missione-inner">
+      <p>Il nostro obiettivo, con tutti i contenuti che condividiamo, è aiutarti a <strong>costruire stabilità economica senza rinunciare a goderti la vita.</strong></p>
+      <p>Perché risparmiare non significa privarsi. Significa scegliere cosa conta davvero — e permetterselo senza sensi di colpa.</p>
+      <span class="mf-next-mail">📩 Non perderti la prossima mail: ti raccontiamo la nostra storia.</span>
+    </div>
+  </section>
+
+  <div class="mf-foto">
+    <img src="foto-dora-davide.png" alt="Dora e Davide — Maleducati Finanziari">
+  </div>
+
+  <footer class="mf-footer">
+    <p>
+      <strong>Maleducati Finanziari</strong><br>
+      Partita IVA: 13069380015 &mdash; Via Cardinale Maurilio Fossati 20, 10141 Torino (TO)
+    </p>
+  </footer>
+
+</body>
+</html>
